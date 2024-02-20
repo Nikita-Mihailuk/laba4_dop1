@@ -9,6 +9,7 @@ public class Main {
         char operator = ' ';
         double a = 0;
         double b = 0;
+        boolean temp;
 
         for (int i = 0; i < input.length(); i++) {
             char n = input.charAt(i);
@@ -16,8 +17,9 @@ public class Main {
                 operator = n;
             }
             else if (Character.isDigit(n)) {
-                if (input.charAt(i-2) != '=' ) {
+                if (temp) {
                     a = Character.getNumericValue(n);
+                    temp = false;
                 }
                 else {
                     b = Character.getNumericValue(n);
