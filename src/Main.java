@@ -9,7 +9,7 @@ public class Main {
         char operator = ' ';
         double a = 0;
         double b = 0;
-        boolean temp;
+        boolean temp = true;
 
         for (int i = 0; i < input.length(); i++) {
             char n = input.charAt(i);
